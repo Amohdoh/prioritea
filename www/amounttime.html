@@ -1,0 +1,101 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- Top Navbar-->
+
+<div data-name="amountTimePage" class="page">
+
+  <!-- Top Navbar-->
+  <div class="navbar">
+    <div class="navbar-inner">
+     
+      <div class="left">
+        <a id="backBut3" href="#" class="back link">
+          <i class="icon icon-back"></i>
+          <span>Back</span>
+        </a>
+      </div>
+       <div class="title">Prioriprize</div>
+              <div class="right">
+                <a id="topRNextBut3" href="/mainscreen/" class="next link"><i class="icon icon-next"></i><span>Next</span></a>
+                <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+              </div>
+            </div>
+          </div>
+              
+
+
+    <div class="page-content">
+        <div class="content-block" align="center">
+           <h2 >Time</h2>
+           <p>How long would you like to spend on each priority per day?</p>
+           <p>Don't worry if your total is over 24 hrs, that's what we're here for!</p>
+
+           <!--Stepper test -->
+     
+
+        <!-- table style!  -->
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+
+        </style>
+
+      
+        <!-- table -->
+        <table style="width:100%">
+            <tr>
+                <th>Priority</th>
+                <th>Hours per day</th> 
+            </tr>
+            <tr id="tableCol1">
+                <td id = "priorityVal1"  align="center"></td>
+                <td>    <div class="item-input-wrap"> 
+                              <div class="stepper stepper-init" id="stepper1">
+              <div class="stepper-button-minus"></div>
+              <div class="stepper-input-wrap">
+                <input type="text" readonly min="0" max="50" step="10" value="15" id="stepperInput1">
+                </div>
+              <div class="stepper-button-plus"></div>
+           </div>
+
+                </div> </td>
+            </tr>
+            <tr id="tableCol2">
+                <td id = "priorityVal2" align="center"></td>
+                <td><div class="item-input-wrap"> <input id = "priorityHrs2" type="number"> </div></td>
+            </tr>
+            <tr id="tableCol3">
+                <td id = "priorityVal3" align="center"></td>
+                <td><div class="item-input-wrap"> <input id = "priorityHrs3" type="number"> </div></td>
+
+            </tr>
+            <tr id="tableCol4">
+                <td id = "priorityVal4" align="center"></td>
+                <td><div class="item-input-wrap"> <input id = "priorityHrs4" type="number"> </div></td>
+            </tr>
+            <tr id="tableCol5">
+                <td id = "priorityVal5" align="center"></td>
+                <td><div class="item-input-wrap"> <input id = "priorityHrs5" type="number"> </div></td>
+            </tr>
+            <tr id="tableCol6">
+                <td id = "priorityVal6" align="center"></td>
+                <td><div class="item-input-wrap"> <input id = "priorityHrs6" type="number"> </div></td>
+            </tr>
+            <tr id="tableCol7">
+                <td id = "priorityVal7" align="center"></td>
+                <td><div class="item-input-wrap"> <input id = "priorityHrs7" type="number"> </div></td>
+            </tr>
+        </table>
+
+        <div class="block">
+            <p class="row">
+        <button class="col button button-raised" id="confirmHoursButton">Confirm</button>
+            </p>
+        </div> 
+
+    </div>
+
+   </div>
+</div>
+  
